@@ -2,14 +2,15 @@
   "name": "servers",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
+  
   "scripts": {
     "express:start": "tsx watch express-index.ts",
     "fastify:start": "tsx watch fastify-index.ts",
     "bun:start": "bun run --watch bun-index.ts",
     "elysia:start": "bun run --watch elysia-index.ts",
     "hono:start": "bun run --watch hono-index.ts",
-    "build": "node dist/express-index.js"
+    "build": "tsc",
+    "start": "node dist/express-index.js"
   },
   "keywords": [],
   "author": "",
